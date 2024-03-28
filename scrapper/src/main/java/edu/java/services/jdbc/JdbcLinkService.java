@@ -1,17 +1,15 @@
 package edu.java.services.jdbc;
 
-import edu.java.dto.LinkProcessor;
 import edu.java.exception.RequestException;
 import edu.java.models.LinkResponse;
 import edu.java.repository.ChatRepository;
 import edu.java.repository.LinkRepository;
 import edu.java.services.LinkService;
+import edu.java.utils.LinkProcessor;
 import java.net.URI;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
 
-@Service
 @RequiredArgsConstructor
 public class JdbcLinkService implements LinkService {
     private final ChatRepository chatRepository;
